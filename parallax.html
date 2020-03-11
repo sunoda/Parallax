@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+    body{
+        margin: 0;
+
+    }
+    #all{
+        margin: 0;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #avatar{
+        background-color: yellow;
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        top: 1vh;
+        left: calc(10% + 15px);
+        border: 2px white solid;
+        border-radius: 50%;
+        box-shadow: 5px 5px 10px;
+        background-image: url(img/jay_G_avatar.jpg);
+        background-size: cover;
+        display: grid;
+        
+        transition-duration: 3s;
+        /* background-clip: content-box; */
+        /* background-origin: content-box; */
+    }
+
+    
+    #selection{
+        /* background-color: tomato; */
+        width: 45%;
+        height: 50px;
+        position: fixed;
+        top: 60px;
+        right: calc(10% + 15px);
+    }
+
+    #selectionA{
+        width: 30%;
+        margin-right: 5%;
+        float: left;
+
+    }
+    /* #selectionA:hover{
+        background-color: rgba(0,0,0,0.6);
+        transition: background-color 2s;
+
+    } */
+    #selectionB{
+        width: 30%;
+        margin-right: 5%;
+        float: left;
+    }
+    /* #selectionB:hover{
+        background-color: rgba(0,0,0,0.6);
+    } */
+
+    #selectionC{
+        width: 30%;
+        float: left;
+    }
+    /* #selectionC:hover{
+        background-color: rgba(0,0,0,0.6);
+    } */
+
+    #PicA{
+        width: 100%;
+        padding-top: 50vh;
+        background-image: url(img/snowboard_cover_1600x900.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    #sheetA{
+        width: 100%;
+        height: calc(25vh + 50px);
+        padding-top: calc(25vh - 50px);
+        /* padding-bottom: 100px; */
+        /* padding-bottom: 25vh; */
+    }
+    #buttonA{
+        width: 200px;
+        height: 100px;
+        margin: 0px auto;
+    }
+    #PicB{
+        width: 100%;
+        padding-top: 50vh;
+        background-image: url(img/snowboard_vh_1.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        /* background-position: center; */
+    }
+    #sheetB{
+        width: 100%;
+        height: calc(25vh + 50px);
+        padding-top: calc(25vh - 50px);
+        /* padding-bottom: 100px; */
+        /* padding-left: 50%; */
+    }
+    #buttonB{
+        width: 200px;
+        height: 100px;
+        margin: 0px auto;
+    }
+    #PicC{
+        width: 100%;
+        height: calc(100vh - 50vh);
+        padding-top: 50vh;
+        background-image: url(img/snowboard_vh_2.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    #sheetC{
+        width: 100%;
+        height: calc(25vh + 50px);
+        padding-top: calc(25vh - 50px);
+        /* padding-bottom: 100px; */
+        /* padding-left: 50% */
+    }
+    #buttonC{
+        width: 200px;
+        height: 100px;
+        margin: 0px auto;
+    }
+    .btm_color{
+        background-color: rgba(0,0,0,0.5);
+    }
+    .btn_style{
+        background-color: green;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 100px;
+        ;
+    }
+    .btn_style:hover{
+        background-color: rgba(0, 255, 0, 0.5);
+        transition: background-color 2s;
+    }
+    .selection_style{
+        background-color: gray;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 5px;
+        scroll-behavior:smooth;
+
+        
+    }
+    .selection_style:hover{
+        background-color: rgba(255, 0, 0, 0.9);
+        transition: all ease-in-out 0.5s;
+    }
+    
+    
+
+    </style>
+    <SCript>
+
+    </SCript>
+</head>
+
+<body>
+<div id="all">
+    <div id="avatar"><a href="#"></a>
+
+        <!-- https://media.prod.mdn.mozit.cloud/attachments/2012/07/09/3700/3e1094a1c7b42332b9bdef0d0b0c4a7f/css_dropdown_menu.html -->
+<!--         
+        <ul>
+            <li>
+                <a href="#PicA">Riding</a>
+            </li>
+            <li>
+                <a href="#PicB">Jumping</a>
+            </li>
+            <li>
+                <a href="#PicC">Landing</a>
+            </li>
+        </ul> -->
+    </div>
+    <div id="selection">
+        <div id="selectionA" class="selection_style" ><a href="#PicA">Riding</a></div>
+        <div id="selectionB" class="selection_style"><a href="#PicB">Jumping</a></div>
+        <div id="selectionC" class="selection_style"><a href="#PicC">Landing</a></div>
+    </div>
+    <div id="PicA">
+
+        <div id="sheetA" class="btm_color">
+            <div id="buttonA" class="btn_style"><a href="javascript:alert('已經是頂端!');">回到頂端嗎?</a></div>
+        </div>
+    </div>
+    <div id="PicB">
+        <div id="sheetB" class="btm_color">
+            <div id="buttonB" class="btn_style"><a href="#">回到頂端</a></div>
+        </div>
+    </div>
+    <div id="PicC">
+        <div id="sheetC" class="btm_color">
+            <div id="buttonC" class="btn_style"><a href="#">回到頂端</a></div>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
